@@ -22,13 +22,9 @@ class Complex(object):
             (self.imag * other.real - self.real * other.imag) / m)
 
     def __pow__(self, n):
-        return Complex((self.real + self.imag)**n)
-        # r = math.sqrt(self.real**2 + self.imag**2)
-        # cosf = self.real / r
-        # sinf = self.imag / r
-        # if sinf > 0 cosf > 0:
-        #     f = 
-        # return Complex(self.real**n, self.imag**n)
+        r = pow(math.hypot(self.real, self.imag), n)
+        phi = n * ((math.pi / 2 - math.atan2(self.real, self.imag)) % (math.pi * 2))
+        return Complex(math.cos(phi) * r, math.sin(phi) * r)
 
 
 numbers = []
@@ -40,11 +36,6 @@ try:
         except ValueError:
             numbers.append(1)
     file.close()
-    # x1 = numbers[0]
-    # x2 = numbers[1]
-    # i1 = numbers[2]
-    # i2 = numbers[3]
-    # n = numbers[4]
     try:
         x1 = numbers[0]
     except IndexError:

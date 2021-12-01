@@ -1,4 +1,4 @@
-import webbrowser
+import webbrowser, math
 
 # in.txt
 numbers = []
@@ -109,31 +109,31 @@ try:
                 <td>Dodawanie</td>
                 <td>""" + str(x1) + plusorminus(i1) + """i</td>
                 <td>""" + str(x2) + plusorminus(i2) + """i</td>
-                <td>""" + str(results[0]) + " " + plusorminus(results[1]) + """i</td>
+                <td>""" + str(round(results[0])) + " " + plusorminus(round(results[1])) + """i</td>
             </tr>
             <tr>
                 <td>Odejmowanie</td>
                 <td>""" + str(x1) + plusorminus(i1) + """i</td>
                 <td>""" + str(x2) + plusorminus(i2) + """i</td>
-                <td>""" + str(results[2]) + " " + plusorminus(results[3]) + """i</td>
+                <td>""" + str(round(results[2])) + " " + plusorminus(round(results[3])) + """i</td>
             </tr>
             <tr>
                 <td>Mnozenie</td>
                 <td>""" + str(x1) + plusorminus(i1) + """i</td>
                 <td>""" + str(x2) + plusorminus(i2) + """i</td>
-                <td>""" + str(results[4]) + " " + plusorminus(results[5]) + """i</td>
+                <td>""" + str(round(results[4])) + " " + plusorminus(round(results[5])) + """i</td>
             </tr>
             <tr>
                 <td>Dzielenie</td>
                 <td>""" + str(x1) + plusorminus(i1) + """i</td>
                 <td>""" + str(x2) + plusorminus(i2) + """i</td>
-                <td>""" + str(results[6]) + " " + plusorminus(results[7]) + """i</td>
+                <td>""" + str(round(results[6])) + " " + plusorminus(round(results[7])) + """i</td>
             </tr>
             <tr>
                 <td>Potegowanie</td>
                 <td>""" + str(x1) + plusorminus(i1) + """i</td>
                 <td> </td>
-                <td>""" + str(results[8]) + """i</td>
+                <td>""" + str(round(results[8])) + " " + plusorminus(round(results[9])) + """i</td>
             </tr>
         </tbody>
     </table>

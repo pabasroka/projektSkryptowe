@@ -23,6 +23,8 @@ if %input% EQU 4 (
 :start
 call app.py
 call web.py
+cls
+goto menu
 
 :info 
 echo Program wykonuje podstawowe dzialania arytmetyczne w dziedzinie liczb zespolonych
@@ -36,6 +38,7 @@ goto menu
 
 :backup
 mkdir backup%date%
-xcopy %cd% \backup /S
+echo %cd%
+xcopy %cd% backup%date% /S
 
 pause
