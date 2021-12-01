@@ -1,4 +1,4 @@
-import webbrowser, math
+import webbrowser
 
 # in.txt
 numbers = []

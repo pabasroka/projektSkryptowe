@@ -72,10 +72,3 @@ file = open("out.txt", "w")
 data = str(sum.real) + "\n" + str(sum.imag) + "\n" + str(dif.real) + "\n" + str(dif.imag) + "\n" + str(prod.real) + "\n" + str(prod.imag) + "\n" + str(quo.real) + "\n" + str(quo.imag) + "\n" + str(pow.real) + "\n" + str(pow.imag)
 file.write(data)
 file.close()
-
-
-print(sum.real, sum.imag)
-print(dif.real, dif.imag)
-print(prod.real, prod.imag)
-print(quo.real, quo.imag)
-print(pow.real, pow.imag)
